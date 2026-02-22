@@ -1,4 +1,7 @@
 <?php
+
+use Ramsey\Uuid\Uuid;
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Pasien extends CI_Controller
@@ -10,6 +13,10 @@ class Pasien extends CI_Controller
     private function getNorm()
     {
         return $this->session->userdata("norm");
+    }
+    public function get()
+    {
+        echo Uuid::uuid4()->toString();
     }
     public function index()
     {
