@@ -7,9 +7,13 @@ class BaseModel extends CI_Model
         $this->tableName = $tableName;
         $this->pk = $pk;
     }
+    public function base()
+    {
+        return $this->db;
+    }
     public function getData()
     {
-        return $this->db->get($this->tableName)->result();
+        return $this->base()->get($this->tableName)->result();
     }
     public function insertData($data)
     {
@@ -21,6 +25,8 @@ class BaseModel extends CI_Model
     }
     public function deleteData($id)
     {
-        return $this->db->where($this->pk, $id)->delete($this->tableName);
+        return $this->db->set("status",0)
+                    ->where($this->pk, $id)
+                    ->update($this->tableName);
     }
 }

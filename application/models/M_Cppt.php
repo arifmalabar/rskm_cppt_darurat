@@ -9,6 +9,7 @@ class M_Cppt extends BaseModel
     {
         return $this->db
                 ->where("id_kunjungan", $kunjungan)
+                ->where("status", 1)
                 ->order_by("tanggal", "DESC")
                 ->get("cppt")
                 ->result();

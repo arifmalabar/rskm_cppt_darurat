@@ -21,25 +21,25 @@
                 
                 <form action="<?= base_url() ?>pasien/update/<?= $this->session->userdata("norm"); ?>" id="form-update" method="post">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">NORM</label>
                                 <input type="text" name="norm" value="<?= $pasien->norm ?>" id="" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">Nama Pasien</label>
                                 <input type="text" name="nama_pasien" value="<?= $pasien->nama_pasien ?>" id="" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">Tgl Lahir</label>
                                 <input type="date" name="tgl_lahir" value="<?= $pasien->tgl_lahir ?>" id="" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">Jenis Kelamin</label>
                                 <select name="jenis_kelamin" id="" class="form-control">

@@ -8,5 +8,5 @@ class M_Pasien extends BaseModel
     public function getDataByNoRm($norm)
     {
         return $this->db->where("norm", $norm)->get("pasien")->row();
-    }  
+    } 
 }

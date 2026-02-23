@@ -87,7 +87,7 @@
                             <h3 class="card-title">CPPT Tgl : <span class="badge badge-success"><?= $value->tanggal ?></span></h3>
 
                             <div class="card-tools">
-                                <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                <a href="<?= base_url() ?>cppt/hapus/<?= $value->id; ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                 <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i></button>
                             </button>
                             </div>

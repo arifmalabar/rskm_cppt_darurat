@@ -38,4 +38,9 @@ class Cppt extends CI_Controller
         $this->M_Cppt->insertData($data);
         redirect("cppt/showcppt/".$this->getKodeKunjungan());
     }
+    public function hapus($id)
+    {
+        $this->M_Cppt->deleteData($id);
+        redirect("cppt/showcppt/".$this->getKodeKunjungan());
+    }
 }

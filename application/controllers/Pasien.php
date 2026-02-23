@@ -14,6 +14,10 @@ class Pasien extends CI_Controller
     {
         return $this->session->userdata("norm");
     }
+    private function setNorm($norm)
+    {
+        $this->session->set_userdata("norm", $norm);
+    }
     public function get()
     {
         echo Uuid::uuid4()->toString();
@@ -57,6 +61,8 @@ class Pasien extends CI_Controller
             "jenis_kelamin" => $jenis_kelamin
         ];
         $this->M_Pasien->updateData($data, $id);
+        $last = $this->M_Pasien->getDataByNoRm($norm);
+        $this->setNorm($last->norm);
         redirect("kunjungan/showkunjungan/".$this->getNorm());
     }
 }
