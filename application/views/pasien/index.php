@@ -54,7 +54,7 @@
                                 <div class="modal-footer">
                                     <div class="row" style="width: 100%;">
                                         <div class="col-md-6">
-                                            <button class="btn btn-outline-primary" style="width: 100%;">Batal</button>
+                                            <button class="btn btn-outline-primary" data-dismiss="modal" style="width: 100%;">Batal</button>
                                         </div>
                                         <div class="col-md-6">
                                             <button class="btn btn-success" form="tambahpasien" style="width: 100%;">Tambah Pasien</button>

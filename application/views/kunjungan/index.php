@@ -134,7 +134,7 @@
                                 <td><h4><?= $value->nama_ruangan; ?></h4></td>
                                 <td><?= $value->tgl_kunjungan; ?></td>
                                 <td>
-                                    <a href="<?= base_url() ?>cppt/showcppt/<?= $value->id_kunjungan ?>" class="btn btn-primary btn-sm">Detail Kunjungan</a>
+                                    <a href="<?= base_url() ?>cppt/showcppt/<?= $value->id_kunjungan ?>" class="btn btn-primary btn-sm">CPPT</a>
                                     <!-- <button data-norm="<?= $value->norm ?>" 
                                     data-nama_pasien="<?= $value->nama_pasien ?>" 
                                     data-tgl_lahir="<?= $value->tgl_lahir ?>" 

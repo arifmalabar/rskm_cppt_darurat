@@ -14,4 +14,8 @@ class M_Cppt extends BaseModel
                 ->get("cppt")
                 ->result();
     }
+    public function getDataById($id)
+    {
+        return $this->db->where("id", $id)->get($this->tableName)->result();
+    }
 }

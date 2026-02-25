@@ -12,7 +12,9 @@
 	},
 	"require": {
 		"php": ">=5.3.7",
-		"ramsey/uuid": "4.2"
+		"ramsey/uuid": "4.2",
+		"simitgroup/phpjasperxml": "1.0",
+		"lavela/phpjasper": "*"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"

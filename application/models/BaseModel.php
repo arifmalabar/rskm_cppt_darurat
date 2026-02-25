@@ -1,7 +1,7 @@
 <?php
 class BaseModel extends CI_Model
 {
-    private $tableName;
+    public $tableName;
     private $pk;
     public function __construct($tableName, $pk) {
         $this->tableName = $tableName;
